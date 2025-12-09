@@ -98,3 +98,16 @@ python examples/scan_gamma_eff.py
 
 
 All parameters used, and their roles, are documented in docs/PARAMETERS.md. The theoretical structure is detailed in docs/THEORY.md. A direct comparison with ΛCDM, MOND–like gravity and CSL–style collapse models is given in docs/MODEL_COMPARISON.md.
+## What this *is* and what this *is not*
+
+- This *is* a minimal, inspectable RFT cosmology core where a single Γ_eff
+  drives BAO scale, CMB acoustic peaks, baryon-only rotation curves and
+  macroscopic collapse in one shot.
+
+- This is *not*:
+  - a full Boltzmann solver,
+  - a parameter-inference engine,
+  - a claim of beating ΛCDM on Planck χ².
+
+If you want to attack it, attack the actual equations in `rft/cosmology_model.py`
+and the Γ_eff → {BAO, ℓ, a₀, λ} mappings in `rft/observables.py`.
