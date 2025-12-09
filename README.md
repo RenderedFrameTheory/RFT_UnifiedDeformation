@@ -51,3 +51,50 @@ RFT_UnifiedDeformation/
 └── examples/
     ├── run_full_pipeline.py
     └── scan_gamma_eff.py
+Installation
+
+Create and activate a virtual environment, then install the dependencies:
+
+pip install -r requirements.txt
+
+Quick start
+
+Run a full background evolution, compute 
+Γ
+eff
+Γ
+eff
+	​
+
+, and generate all four plots plus a ΛCDM comparison:
+
+python examples/run_full_pipeline.py
+
+
+Scan over small deformations of the parameters to see how 
+Γ
+eff
+Γ
+eff
+	​
+
+, the BAO scale, the galaxy acceleration scale 
+𝑎
+0
+a
+0
+	​
+
+, and the collapse rate 
+𝜆
+RFT
+λ
+RFT
+	​
+
+ co–move:
+
+python examples/scan_gamma_eff.py
+
+
+All parameters used, and their roles, are documented in docs/PARAMETERS.md. The theoretical structure is detailed in docs/THEORY.md. A direct comparison with ΛCDM, MOND–like gravity and CSL–style collapse models is given in docs/MODEL_COMPARISON.md.
